@@ -1,1 +1,45 @@
-.env*
+# Compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.env/
+.venv/
+
+# Poetry lock file backup
+poetry.lock.bak
+
+# Cache files
+.cache/
+.cache/*
+*.egg-info/
+*.egg
+
+# Build artifacts
+build/
+dist/
+
+# Poetry specific files
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+
+# IDE specific files
+*.swp
+*.swo
+*.tmp
+*~
+*.idea/
+*.vscode/
+
+# Python bytecode
+__pycache__/
+
+# Other system files
+.DS_Store
+Thumbs.db
+
+# Project virtual environment
+.venv/
