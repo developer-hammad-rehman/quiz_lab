@@ -1,0 +1,39 @@
+# Ignore node_modules
+node_modules
+
+# Ignore logs and temporary files
+logs
+*.log
+
+# Ignore test files and directories
+test
+*.test.js
+
+# Ignore environment configuration files
+.env
+*.env
+
+# Ignore build output
+dist
+build
+
+# Ignore IDE files and settings
+.vscode
+.idea
+
+# Ignore Dockerfile itself
+Dockerfile
+
+# Ignore any other sensitive files or directories
+.secret
+*.key
+*.crt
+*.pem
+
+# Ignore miscellaneous system files
+.DS_Store
+Thumbs.db
+
+# Ignore npm debug log
+npm-debug.log
+.next

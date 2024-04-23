@@ -1,0 +1,20 @@
+version: '1'
+services:
+  api:
+    build:
+      context: ./quiz_backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://developer-hammad-rehman:8bprnOJV0dxm@ep-quiet-lab-a590cace.us-east-2.aws.neon.tech/quiz_app?sslmode=require
+      - SECRET_KEY=engfduitunuuterijgre3009jgkh
+      - ALGORITHM=HS256
+      - ADMIN_NAME=admin123
+      - ADMIN_PASS=admin123
+  frontend:
+    build: 
+      context: ./quiz_app_frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
